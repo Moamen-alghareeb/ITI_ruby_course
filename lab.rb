@@ -61,9 +61,11 @@ class Inventory
     end
     # sort books by isbn and save the sorted books to the json file
     def sort_books()
+        json_data = File.read(@path)
+        @books = JSON.parse(json_data)
         @books = (@books.sort_by {|key,value| key.to_i}).to_h
-        display_books()
         save_books()
+        display_books()
     end
     # search by title and display the book with that title (strict search not case sensitive or regex)
     def search_by_title(title)

@@ -122,13 +122,46 @@ while menu_flag == true
             clr = gets.chomp
             clear_screen
         when 2
-            puts "************adding book************"
-            puts "please enter book's title:"
-            book_title = gets.chomp
-            puts "please enter book's author:"
-            book_author = gets.chomp
-            puts "please enter book's isbn:"
-            book_isbn = gets.chomp
+            while true
+                puts "************adding book************"
+                puts "please enter book's title:"
+                book_title = gets.chomp
+                if(book_title.empty?)
+                    puts "title can't be empty"
+                    puts "***********enter any key to repeat"
+                    clr = gets.chomp
+                    clear_screen
+                    next
+                else
+                    break
+                end
+            end
+            while true
+                puts "please enter book's author:"
+                book_author = gets.chomp
+                if(book_author.empty?)
+                    puts "author can't be empty"
+                    puts "***********enter any key to repeat"
+                    clr = gets.chomp
+                    clear_screen
+                    next
+                else
+                    break
+                end
+            end
+            while true
+                puts "please enter book's isbn:"
+                book_isbn = gets.chomp
+                if(book_isbn.empty?)
+                    puts "isbn can't be empty"
+                    puts "***********enter any key to repeat"
+                    clr = gets.chomp
+                    clear_screen
+                    next
+                else
+                    break
+                end
+            end
             inventory.add_book(book_title,book_author,book_isbn)
             puts "***********book added successfully, enter any key to continue"
             clr = gets.chomp

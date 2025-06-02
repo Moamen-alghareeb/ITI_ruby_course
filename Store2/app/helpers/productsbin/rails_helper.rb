@@ -1,0 +1,2 @@
+module Productsbin::RailsHelper
+end

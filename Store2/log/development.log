@@ -2908,3 +2908,739 @@ Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:21
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:26:09 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (4.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  Rendered products/index.html.erb within layouts/application (Duration: 25.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | GC: 0.0ms)
+Completed 200 OK in 2246ms (Views: 44.6ms | ActiveRecord: 5.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:26:13 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:26:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Store2'*/[0m
+  [1m[36mProduct Load (2.7ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for pp */ LIMIT 11 /*application='Store2'*/[0m
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:30:43 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  Rendered products/index.html.erb within layouts/application (Duration: 19.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | GC: 0.0ms)
+Completed 200 OK in 1444ms (Views: 33.1ms | ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:30:46 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:30:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:30:48 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:7:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 1427ms (Views: 5.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:30:50 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:30:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:30:59 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:7:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | GC: 0.0ms)
+Completed 200 OK in 1661ms (Views: 22.4ms | ActiveRecord: 2.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:31:01 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:31:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:31:11 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  Rendered products/index.html.erb within layouts/application (Duration: 6.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | GC: 0.0ms)
+Completed 200 OK in 1375ms (Views: 9.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:31:13 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:31:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:31:29 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  Rendered products/index.html.erb within layouts/application (Duration: 18.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | GC: 0.0ms)
+Completed 200 OK in 1485ms (Views: 33.3ms | ActiveRecord: 2.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:31:31 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:31:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:33:43 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT 1 /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 19.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | GC: 0.0ms)
+Completed 200 OK in 1409ms (Views: 32.7ms | ActiveRecord: 3.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:33:45 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:33:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/new" for 127.0.0.1 at 2025-06-08 15:34:32 +0300
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1498ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
+Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
+
+Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
+    1: <h1>New product</h1>
+    2: 
+    3: <%= form_with model: @product do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %>
+    6:     <%= form.text_field :name %>
+  
+app/views/products/new.html.erb:3
+
+Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
+  
+app/views/products/new.html.erb:3
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:34:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/new" for 127.0.0.1 at 2025-06-08 15:37:05 +0300
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1366ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (Passed nil to the :model argument, expect an object or false)
+Caused by: ArgumentError (Passed nil to the :model argument, expect an object or false)
+
+Information for: ActionView::Template::Error (Passed nil to the :model argument, expect an object or false):
+    1: <h1>New product</h1>
+    2: 
+    3: <%= form_with model: @product , local: true do |form| %>
+    4:   <div>
+    5:     <%= form.label :name %>
+    6:     <%= form.text_field :name %>
+  
+app/views/products/new.html.erb:3
+
+Information for cause: ArgumentError (Passed nil to the :model argument, expect an object or false):
+  
+app/views/products/new.html.erb:3
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:37:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/new" for 127.0.0.1 at 2025-06-08 15:37:35 +0300
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 25.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | GC: 0.0ms)
+Completed 200 OK in 1783ms (Views: 41.5ms | ActiveRecord: 2.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:37:37 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:37:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/new" for 127.0.0.1 at 2025-06-08 15:39:09 +0300
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 1568ms (Views: 20.7ms | ActiveRecord: 2.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:39:11 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:39:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/products" for 127.0.0.1 at 2025-06-08 15:39:51 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "product" => {"name" => "jeans"}, "commit" => "Create Product"}
+Completed 500 Internal Server Error in 1329ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'private' for an instance of ProductsController):
+  
+app/controllers/products_controller.rb:24:in 'ProductsController#create'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:39:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/new" for 127.0.0.1 at 2025-06-08 15:41:03 +0300
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 1370ms (Views: 19.2ms | ActiveRecord: 2.5ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:41:05 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:41:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  [1m[36mProduct Load (7.6ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for pp */ LIMIT 11 /*application='Store2'*/[0m
+Started POST "/products" for 127.0.0.1 at 2025-06-08 15:41:20 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "product" => {"name" => "jeans"}, "commit" => "Create Product"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:16:in 'ProductsController#create'
+  [1m[36mProduct Create (5.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "created_at", "updated_at") VALUES ('jeans', '2025-06-08 12:41:22.140229', '2025-06-08 12:41:22.140229') RETURNING "id" /*action='create',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:16:in 'ProductsController#create'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:16:in 'ProductsController#create'
+Redirected to http://127.0.0.1:3000/products/3
+Completed 302 Found in 1481ms (ActiveRecord: 13.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2025-06-08 15:41:22 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:7:in 'ProductsController#show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 1362ms (Views: 4.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:41:23 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:41:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:41:28 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT 1 /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 11.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | GC: 0.0ms)
+Completed 200 OK in 1373ms (Views: 14.4ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:41:30 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:41:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:48:20 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 404 Not Found in 1841ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (The :show, action could not be found for the :set_product
+callback on ProductsController, but it is listed in the controller's
+:only option.
+
+Raising for missing callback actions is a new default in Rails 7.1, if you'd
+like to turn this off you can delete the option from the environment configurations
+or set `config.action_controller.raise_on_missing_callback_actions` to `false`.
+):
+  
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:62:in 'AbstractController::Callbacks::ActionFilter#match?'
+activesupport (8.0.2) lib/active_support/callbacks.rb:384:in 'block in ActiveSupport::Callbacks::CallTemplate::ObjectCall#make_lambda'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'Array#all?'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'Array#each'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:118:in 'block in ActiveSupport::Callbacks#run_callbacks'
+turbo-rails (2.0.13) lib/turbo-rails.rb:24:in 'Turbo.with_request_id'
+turbo-rails (2.0.13) app/controllers/concerns/turbo/request_id_tracking.rb:10:in 'Turbo::RequestIdTracking#turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'block in ActiveSupport::Callbacks#run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in 'ActionText::Rendering::ClassMethods#with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in 'block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'BasicObject#instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'block in ActiveSupport::Callbacks#run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in 'AbstractController::Base#process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in 'ActionView::Rendering#process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.1.15) lib/rack/tempfile_reaper.rb:20:in 'Rack::TempfileReaper#call'
+rack (3.1.15) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.1.15) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.1.15) lib/rack/head.rb:15:in 'Rack::Head#call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in 'ActionDispatch::PermissionsPolicy::Middleware#call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in 'ActionDispatch::ContentSecurityPolicy::Middleware#call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in 'Rack::Session::Abstract::Persisted#context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in 'ActionDispatch::Cookies#call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.15) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.15) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.15) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.2) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:48:24 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:48:53 +0300
+Processing by ProductsController#index as HTML
+Completed 404 Not Found in 1402ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+AbstractController::ActionNotFound (The :show, action could not be found for the :set_product
+callback on ProductsController, but it is listed in the controller's
+:only option.
+
+Raising for missing callback actions is a new default in Rails 7.1, if you'd
+like to turn this off you can delete the option from the environment configurations
+or set `config.action_controller.raise_on_missing_callback_actions` to `false`.
+):
+  
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:62:in 'AbstractController::Callbacks::ActionFilter#match?'
+activesupport (8.0.2) lib/active_support/callbacks.rb:384:in 'block in ActiveSupport::Callbacks::CallTemplate::ObjectCall#make_lambda'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'block in ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'Array#all?'
+activesupport (8.0.2) lib/active_support/callbacks.rb:177:in 'ActiveSupport::Callbacks::Filters::Before#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'block in ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'Array#each'
+activesupport (8.0.2) lib/active_support/callbacks.rb:559:in 'ActiveSupport::Callbacks::CallbackSequence#invoke_before'
+activesupport (8.0.2) lib/active_support/callbacks.rb:118:in 'block in ActiveSupport::Callbacks#run_callbacks'
+turbo-rails (2.0.13) lib/turbo-rails.rb:24:in 'Turbo.with_request_id'
+turbo-rails (2.0.13) app/controllers/concerns/turbo/request_id_tracking.rb:10:in 'Turbo::RequestIdTracking#turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'block in ActiveSupport::Callbacks#run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in 'ActionText::Rendering::ClassMethods#with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in 'block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'BasicObject#instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in 'block in ActiveSupport::Callbacks#run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in 'block in ActionController::Instrumentation#process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in 'ActionController::Instrumentation#process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in 'ActiveRecord::Railties::ControllerRuntime#process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in 'AbstractController::Base#process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in 'ActionView::Rendering#process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.1.15) lib/rack/tempfile_reaper.rb:20:in 'Rack::TempfileReaper#call'
+rack (3.1.15) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.1.15) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.1.15) lib/rack/head.rb:15:in 'Rack::Head#call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in 'ActionDispatch::PermissionsPolicy::Middleware#call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in 'ActionDispatch::ContentSecurityPolicy::Middleware#call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in 'Rack::Session::Abstract::Persisted#context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in 'ActionDispatch::Cookies#call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.1.15) lib/rack/method_override.rb:28:in 'Rack::MethodOverride#call'
+rack (3.1.15) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.1.15) lib/rack/sendfile.rb:114:in 'Rack::Sendfile#call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+railties (8.0.2) lib/rails/engine.rb:535:in 'Rails::Engine#call'
+puma (6.6.0) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (6.6.0) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+puma (6.6.0) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:48:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:49:37 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT 1 /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 16.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | GC: 0.0ms)
+Completed 200 OK in 1372ms (Views: 30.4ms | ActiveRecord: 2.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:49:39 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:49:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:49:45 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:36:in 'ProductsController#set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.0ms)
+Completed 200 OK in 1441ms (Views: 5.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:49:47 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:49:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/1/edit" for 127.0.0.1 at 2025-06-08 15:49:50 +0300
+Processing by ProductsController#edit as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='edit',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:36:in 'ProductsController#set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 2.8ms | GC: 0.0ms)
+  Rendered products/edit.html.erb within layouts/application (Duration: 8.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | GC: 0.0ms)
+Completed 200 OK in 1368ms (Views: 11.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:49:52 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:49:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started PATCH "/products/1" for 127.0.0.1 at 2025-06-08 15:50:08 +0300
+Processing by ProductsController#update as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "product" => {"name" => "Sweat Pants"}, "commit" => "Update Product", "id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='update',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:36:in 'ProductsController#set_product'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='update',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:27:in 'ProductsController#update'
+  [1m[36mProduct Update (7.0ms)[0m  [1m[33mUPDATE "products" SET "name" = 'Sweat Pants', "updated_at" = '2025-06-08 12:50:09.702095' WHERE "products"."id" = 1 /*action='update',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:27:in 'ProductsController#update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='update',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:27:in 'ProductsController#update'
+Redirected to http://127.0.0.1:3000/products/1
+Completed 302 Found in 1448ms (ActiveRecord: 7.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:50:09 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:36:in 'ProductsController#set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 1434ms (Views: 4.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:50:11 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:50:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  [1m[36mProduct Load (3.9ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for pp */ LIMIT 11 /*application='Store2'*/[0m
+Started GET "/products/1" for 127.0.0.1 at 2025-06-08 15:52:28 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:41:in 'ProductsController#set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 1376ms (Views: 21.3ms | ActiveRecord: 3.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:52:30 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:52:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started DELETE "/products/1" for 127.0.0.1 at 2025-06-08 15:52:32 +0300
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "id" => "1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 1 LIMIT 1 /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:41:in 'ProductsController#set_product'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+  [1m[36mProduct Destroy (6.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = 1 /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 1359ms (ActiveRecord: 7.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:52:34 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT 1 /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 10.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | GC: 0.0ms)
+Completed 200 OK in 1364ms (Views: 13.6ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:52:36 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:52:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/products/3" for 127.0.0.1 at 2025-06-08 15:52:48 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1 /*action='show',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:41:in 'ProductsController#set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 1411ms (Views: 4.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:52:50 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:52:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started DELETE "/products/3" for 127.0.0.1 at 2025-06-08 15:52:52 +0300
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "id" => "3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1 /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:41:in 'ProductsController#set_product'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+  [1m[36mProduct Destroy (6.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = 3 /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='Store2',controller='products'*/[0m
+  ↳ app/controllers/products_controller.rb:35:in 'ProductsController#destroy'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 1455ms (ActiveRecord: 6.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2025-06-08 15:52:53 +0300
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" LIMIT 1 /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:4
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" /*action='index',application='Store2',controller='products'*/[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 9.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | GC: 0.0ms)
+Completed 200 OK in 1355ms (Views: 12.5ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-06-08 15:52:55 +0300
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-06-08 15:52:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Store2'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Store2'*/[0m
+Migrating to CreateUsers (20250608130053)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Store2'*/[0m
+  [1m[35m (32.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email_address" varchar NOT NULL, "password_digest" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Store2'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email_address" ON "users" ("email_address") /*application='Store2'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250608130053') RETURNING "version" /*application='Store2'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Store2'*/[0m
+Migrating to CreateSessions (20250608130106)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Store2'*/[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "ip_address" varchar, "user_agent" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_758836b4f0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+) /*application='Store2'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_sessions_on_user_id" ON "sessions" ("user_id") /*application='Store2'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250608130106') RETURNING "version" /*application='Store2'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Store2'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Store2'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Store2'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Store2'*/[0m
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email_address", "password_digest", "created_at", "updated_at") VALUES ('moamen@gmail.com', '$2a$12$7tU8p3veFdHmT5DE8za.x.a9CTy7qHJvpyXziAc.7EMz30YmDbNBq', '2025-06-08 13:03:25.939962', '2025-06-08 13:03:25.939962') RETURNING "id" /*application='Store2'*/[0m
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Store2'*/[0m
+Started GET "/products/new" for ::1 at 2025-06-08 16:03:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Store2'*/[0m
+Processing by ProductsController#new as HTML
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 1389ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2025-06-08 16:03:49 +0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 30.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | GC: 0.0ms)
+Completed 200 OK in 1438ms (Views: 46.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-06-08 16:03:50 +0300
+Started GET "/assets/application-8b441ae0.css" for ::1 at 2025-06-08 16:03:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/session" for ::1 at 2025-06-08 16:04:01 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "email_address" => "[FILTERED]", "password" => "[FILTERED]", "commit" => "Sign in"}
+Completed 500 Internal Server Error in 1425ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in '<class:User>'
+app/models/user.rb:1:in '<main>'
+app/controllers/sessions_controller.rb:9:in 'SessionsController#create'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-06-08 16:04:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/favicon.ico" for ::1 at 2025-06-08 16:04:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  

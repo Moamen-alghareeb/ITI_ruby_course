@@ -1,0 +1,16 @@
+<h1>Products</h1>
+
+<%= link_to "New product", new_product_path %>
+<% if @products.empty? %>
+  <p>No products available.</p>
+<% else %>
+    <div id="products">
+    <% @products.each do |product| %>
+        <h2>
+        <%= link_to product.name, product %>
+        </h2>
+    <% end %>
+    </div>
+<% end %>
+
+

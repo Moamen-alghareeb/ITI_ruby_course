@@ -1,0 +1,36 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  id            :integer          not null, primary key
+#  title         :string
+#  content       :text
+#  user_id       :integer          not null
+#  reports_count :integer
+#  archived      :boolean
+#  image         :string
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+# Indexes
+#
+#  index_articles_on_user_id  (user_id)
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  user: one
+  reports_count: 1
+  archived: false
+  image: MyString
+
+two:
+  title: MyString
+  content: MyText
+  user: two
+  reports_count: 1
+  archived: false
+  image: MyString

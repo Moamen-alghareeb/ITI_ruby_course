@@ -1,0 +1,371 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+.auth-nav {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.auth-nav__logged-in,
+.auth-nav__logged-out {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.auth-nav__welcome {
+  color: #495057;
+  font-weight: 500;
+}
+
+.auth-nav__link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.auth-nav__link:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+.auth-nav__divider {
+  color: #adb5bd;
+}
+
+.auth-nav__button {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.auth-nav__button:hover {
+  color: #b02a37;
+  text-decoration: underline;
+}
+
+.article-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.article-form__field {
+  margin-bottom: 1.5rem;
+}
+
+.article-form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.article-form__input,
+.article-form__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.article-form__input:focus,
+.article-form__textarea:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.article-form__textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.article-form__file {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.article-form__submit {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.article-form__submit:hover {
+  background-color: #0b5ed7;
+}
+
+.article-form__errors {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-form__errors-heading {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.article-form__errors-list {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.articles-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.articles-header {
+  color: #212529;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.articles-new-link {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.articles-new-link:hover {
+  background-color: #0b5ed7;
+  text-decoration: none;
+}
+
+.articles-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.article-card {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+.article-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.article-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.article-excerpt {
+  color: #495057;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.article-image {
+  margin-bottom: 1rem;
+}
+
+.article-image__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.article-report-button {
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.article-report-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.back-btn {
+  background-color: #cf3737;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.back-btn:hover {
+  background-color: #a81919;
+}
+
+.article-show {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.article-show__title {
+  color: #212529;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.article-show__content {
+  color: #495057;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.article-show__content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-show__image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.article-show__image-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-show__meta {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.article-show__actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.article-show__edit-link,
+.article-show__delete-link {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+
+.article-show__edit-link {
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid #0d6efd;
+}
+
+.article-show__edit-link:hover {
+  background-color: #0b5ed7;
+  text-decoration: none;
+}
+
+.article-show__delete-link {
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.article-show__delete-link:hover {
+  background-color: #dc3545;
+  color: white;
+  text-decoration: none;
+}
+
+.article-show__back {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.article-show__back-link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.article-show__back-link:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}

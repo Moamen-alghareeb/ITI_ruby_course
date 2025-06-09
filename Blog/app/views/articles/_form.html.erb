@@ -1,0 +1,31 @@
+<%= form_with(model: article, local: true, class: "article-form") do |form| %>
+  <% if article.errors.any? %>
+    <div class="article-form__errors">
+      <h2 class="article-form__errors-heading"><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
+      <ul class="article-form__errors-list">
+        <% article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="article-form__field">
+    <%= form.label :title, class: "article-form__label" %>
+    <%= form.text_field :title, class: "article-form__input" %>
+  </div>
+
+  <div class="article-form__field">
+    <%= form.label :content, class: "article-form__label" %>
+    <%= form.text_area :content, class: "article-form__textarea" %>
+  </div>
+
+  <div class="article-form__field">
+    <%= form.label :image, class: "article-form__label" %>
+    <%= form.file_field :image, class: "article-form__file" %>
+  </div>
+
+  <div class="article-form__actions">
+    <%= form.submit class: "article-form__submit" %>
+  </div>
+<% end %>

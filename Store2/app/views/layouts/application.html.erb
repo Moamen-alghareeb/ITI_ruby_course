@@ -16,18 +16,43 @@
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
-
+    <style>
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+      }
+      main {
+        padding: 20px;
+      }
+      </style>
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+
   </head>
 
   <body>
       <body>
-    <nav>
-      <%= link_to "Home", products_path %>
-      <%= link_to "Login", new_session_path unless authenticated? %>
-      <%= button_to "Log out", session_path, method: :delete if authenticated? %>
-    </nav>s
+<nav class="main-nav">
+  <div class="nav-container">
+    <%= link_to "Home", products_path, class: "nav-link nav-home" %>
+    <div class="nav-auth">
+      <% unless authenticated? %>
+        <%= link_to "Login", new_session_path, class: "nav-link nav-login" %>
+      <% else %>
+        <%= button_to "Log out", session_path, method: :delete, class: "nav-link nav-logout" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
 
     <main>
       <%= yield %>

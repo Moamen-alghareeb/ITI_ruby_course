@@ -1,16 +1,24 @@
-<h1>Products</h1>
-
-<%= link_to "New product", new_product_path if authenticated? %>
-<% if @products.empty? %>
-  <p>No products available.</p>
-<% else %>
-    <div id="products">
-    <% @products.each do |product| %>
-        <h2>
-        <%= link_to product.name, product %>
-        </h2>
+<div class="products-container">
+  <header class="products-header">
+    <h1 class="products-title">Products</h1>
+    <% if authenticated? %>
+      <%= link_to "New product", new_product_path, class: "btn btn-primary" %>
     <% end %>
+  </header>
+
+  <% if @products.empty? %>
+    <div class="empty-state">
+      <p class="empty-message">No products available.</p>
     </div>
-<% end %>
-
-
+  <% else %>
+    <div class="products-grid">
+      <% @products.each do |product| %>
+        <div class="product-card">
+          <h2 class="product-name">
+            <%= link_to product.name, product, class: "product-link" %>
+          </h2>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

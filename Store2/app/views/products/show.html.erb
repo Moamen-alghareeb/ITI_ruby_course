@@ -1,7 +1,18 @@
-<h1><%= @product.name %></h1>
-
-<%= link_to "Back", products_path %>
-<% if authenticated? %>
-<%= link_to "Edit", edit_product_path(@product) %>
-<%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
-<% end %>
+<div class="product-show">
+  <header class="product-header">
+    <h1 class="product-title"><%= @product.name %></h1>
+    
+    <div class="product-actions">
+      <%= link_to "Back", products_path, class: "btn btn-secondary" %>
+      
+      <% if authenticated? %>
+        <%= link_to "Edit", edit_product_path(@product), class: "btn btn-edit" %>
+        <%= button_to "Delete", @product, 
+                      method: :delete, 
+                      class: "btn btn-danger",
+                      form: { class: "delete-form" },
+                      data: { turbo_confirm: "Are you sure?" } %>
+      <% end %>
+    </div>
+  </header>
+</div>
